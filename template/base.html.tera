@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% block head %}
+      <meta charset="utf-8"/>
+      <meta content="Site à Choupinette" name="description"/>
+      <meta content="Choupi" name="author"/>
+      <meta content="width=device-width, initial-scale=1" name="viewport"/>
+      <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css"/>
+      <link href="/css/normalize.css" rel="stylesheet"/>
+      <link href="/css/skeleton.css" rel="stylesheet"/>
+      <link href="/css/style.css" rel="stylesheet"/>
+      <link href="/images/dessin_maison.jpg" rel="shortcut icon"/>
+    {% endblock head %}
+    <title>
+      {% block title %}
+        site des choupis
+      {% endblock title %}
+    </title>
+  </head>
+  <body>
+    <div class="container">
+      <p><!-- passe une ligne --></p>
+      {% block content %}{% endblock content %}
+      <footer>
+        &copy; Copyright 2020 by
+        <a href="http://domaindeschoupis.invalid/">you</a>.
+      </footer>
+    </div>
+  </body>
+</html>
